@@ -8,7 +8,8 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 
-@NamedQuery(name = "User.findByEmailId",Query = "select u from User u where u.email = :email")
+@NamedQuery(name = "User.findByEmailId",query = "select u from User u where u.email = :email")
+
 @Data
 @Entity
 @DynamicInsert
